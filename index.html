@@ -59,10 +59,14 @@
             return false;
         }
 
-        var width = canvas.width();
-        var height = canvas.height();        
+        var deviceWidth = $(window).width();
+
+        var width = deviceWidth < 768 ? deviceWidth : 1100;
+        var height = deviceWidth < 768 ? deviceWidth * (680 / 1100) : 680;
+
         canvas.attr("width", width);
         canvas.attr("height", height);
+
 
         var opts = {
             seed: {
