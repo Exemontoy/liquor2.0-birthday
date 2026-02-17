@@ -100,15 +100,3 @@ canvas {
   background: transparent !important;
 }
 
-@media (max-width: 768px) {
-
-  body {
-    overflow-x: hidden;
-  }
-
-  #wrap {
-    transform: scale(0.9);
-    transform-origin: top center;
-  }
-
-}
